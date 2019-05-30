@@ -9,6 +9,10 @@
 
     namespace RANSAC
     {
+        /// <summary>
+        /// Only for simply remote online compiling process
+        /// Delete later
+        /// </summary>
         public static class RANSAC
         {
             public const string INPUT_FILE = "input.txt";
