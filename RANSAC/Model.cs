@@ -102,7 +102,6 @@ namespace RANSAC
 
                 string str = x.ToString(specifier, provider);
                 return str;
-                return (x > 0) ? "+" + str : str;
             }
         }
     }

@@ -251,7 +251,7 @@ namespace RANSAC
             result[0] = new Vector3(20, 0, 0);
             result[1] = new Vector3(10, -10, 0);
             result[2] = new Vector3(10, 10, 0);
-
+            Console.WriteLine("Should be 0.000000 0.000000 1.000000 0.000000");
             return result;
         }
 
@@ -261,7 +261,7 @@ namespace RANSAC
             result[0] = new Vector3(20, 0, 3);
             result[1] = new Vector3(10, -10, 2);
             result[2] = new Vector3(10, 10, 2);
-
+            Console.WriteLine("Should be -0.099504 0.000000 0.995037 -0.995037");
             return result;
         }
 
@@ -278,7 +278,7 @@ namespace RANSAC
             result[7] = new Vector3(10, 10, 0.1f);
             result[8] = new Vector3(20, 18, 1.7f);
             result[9] = new Vector3(15, -15, 1.2f);
-
+            Console.WriteLine("Should be -0.010000 0.000000 0.999950 0.000000");
             return result;
         }
     }
