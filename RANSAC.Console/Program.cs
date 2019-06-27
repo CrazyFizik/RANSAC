@@ -14,7 +14,9 @@ namespace RANSAC.Console
 
         static void Main(string[] args)
         {
-            //DemoStaticTest();
+            System.Console.WriteLine("\n STATIC DATA\n");
+            DemoStaticTest();
+            System.Console.WriteLine("\n READ FROM DATA\n");
             DemoTest();
         }
 
@@ -85,17 +87,21 @@ namespace RANSAC.Console
         {
             RansacPlane rp = new RansacPlane();
 
-            System.Console.Write("A1: ");
+            
             rp.Estimate(RansacPlane.GetTestA1());
+            System.Console.Write("A1: ");
             System.Console.WriteLine(rp.BestModel.ToString());
-
-            System.Console.Write("A2: ");
+            System.Console.WriteLine("===========================================================================");
+            
             rp.Estimate(RansacPlane.GetTestA2());
+            System.Console.Write("A2: ");
             System.Console.WriteLine(rp.BestModel.ToString());
+            System.Console.WriteLine("===========================================================================");
 
-            System.Console.Write("A3: ");
             rp.Estimate(RansacPlane.GetTestA3());
+            System.Console.Write("A3: ");
             System.Console.WriteLine(rp.BestModel.ToString());
+            System.Console.WriteLine("===========================================================================");
 
             System.Console.ReadKey();
         }
