@@ -1,0 +1,1 @@
+﻿Common file of source code for Yandex's Cloud Compiler
